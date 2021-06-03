@@ -21,7 +21,7 @@ html {
 
 section {
   /* padding: 3em 5em; */
-  padding: 100px 0;
+  padding: 4em 0;
 
 }
 
@@ -182,7 +182,7 @@ section {
   transform: translateX(-50%);
 } */
 
- .about-content {
+.about-content {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -245,32 +245,22 @@ section {
 
 .skills {
   background-color: #f8f9fa;
+  text-align: center;
 }
 .skills .title {
-  position: relative;
+  /* position: relative; */
+  display: inline-block;
   text-align: center;
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 500;
   margin-bottom: 2em;
   padding-bottom: 0.5em;
   font-family: "Ubuntu", sans-serif;
+  border-bottom:3px solid #82b440;
 }
-
-.skills .title::before {
-  content: "";
-  position: absolute;
-  bottom: 0px;
-  left: 50%;
-  width: 180px;
-  height: 3px;
-  background: #82b440;
-  transform: translateX(-50%);
-}
-
 .skills-content {
   display: flex;
 }
-
 .skills-content img {
   height: 4rem;
   width: 4rem;
@@ -279,33 +269,31 @@ section {
   display: block;
 }
 
-/* ------------projects------------- */
 
-.projects .title {
-  position: relative;
+/*PROJECTS*/
+.projects{
   text-align: center;
-  font-size: 40px;
-  font-weight: 500;
-  margin-bottom: 60px;
-  padding-bottom: 20px;
+  width:80%;
+  margin-left: auto;
+  margin-right: auto;
   font-family: "Ubuntu", sans-serif;
 }
-
-.projects .title::before {
-  content: "";
-  position: absolute;
-  bottom: 0px;
-  left: 50%;
-  width: 180px;
-  height: 3px;
-  background: #82b440;
-  transform: translateX(-50%);
+.projects .title {
+  /* position: relative; */
+  display: inline-block;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 2em;
+  padding-bottom: 0.5em;
+  font-family: "Ubuntu", sans-serif;
+  border-bottom:3px solid #82b440;
 }
-
 .projects .project-list {
   display: flex;
-  background-color: #f8f9fa;
-  margin-bottom: 30px;
+  background-color: #111;
+  margin-bottom:1.5em;
+  padding: 1em 0.8em;
 }
 
 .projects .left-content {
@@ -323,14 +311,14 @@ section {
   width: 100%;
   object-fit: contain;
 }
-.projects h2 {
-  position: relative;
+.project-list h2 {
+  /* position: relative; */
   text-align: center;
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 500;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  font-family: "Ubuntu", sans-serif;
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+  color:#dcd8d8;
 }
 .projects button {
   width: 7em;
@@ -341,18 +329,26 @@ section {
   transition: all 0.3s ease;
   font-weight: 500;
   outline: none;
-  /* margin-top: 0.8rem; */
   background: #82b440;
   color: #111;
-  font-size: 20px;
+  font-size: 1.4rem;
   margin-left: auto;
   margin-right: auto;
 }
+.projects button a{
+  color:#111;
+}
 .projects button:hover {
-  color: #111;
+  color: #dcd8d8;
   background: none;
 }
-
+.projects button a:hover {
+  color: #dcd8d8;
+  background: none;
+}
+.projects img{
+  opacity: 0.9;
+}
 .experience .title {
   position: relative;
   text-align: center;
