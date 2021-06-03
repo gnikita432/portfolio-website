@@ -6,14 +6,23 @@
   text-decoration: none;
 }
 
+body{
+  overflow-x: hidden;
+}
 html {
   scroll-behavior: smooth;
 }
 
 .max-width {
   max-width: 1300px;
-  padding: 0 80px;
+  padding: 0 70px;
   margin: auto;
+}
+
+section {
+  /* padding: 3em 5em; */
+  padding: 100px 0;
+
 }
 
 
@@ -144,24 +153,25 @@ html {
   background: none;
 }
 
-/* -----about----------- */
-section {
-  padding: 55px 85px;
-}
-.about,
-footer {
+
+/* About */
+
+.about{
   font-family: "Poppins", sans-serif;
+  text-align: center;
 }
 .about .title {
-  position: relative;
+  /* position: relative; */
+  display: inline-block;
   text-align: center;
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 500;
-  margin-bottom: 60px;
-  padding-bottom: 20px;
+  margin-bottom: 1.6em;
+  padding-bottom: 0.5em;
   font-family: "Ubuntu", sans-serif;
+  border-bottom:3px solid #82b440;
 }
-.about .title::before {
+/* .about .title::before {
   content: "";
   position: absolute;
   bottom: 0px;
@@ -170,9 +180,9 @@ footer {
   height: 3px;
   background: #82b440;
   transform: translateX(-50%);
-}
+} */
 
-.about .about-content {
+ .about-content {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -187,17 +197,21 @@ footer {
   height: 400px;
   width: 400px;
   object-fit: cover;
-  border-radius: 6px;
+  border-radius: 4%;
 }
 
 .about .about-content .right {
   width: 55%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .about .about-content .right .text {
-  font-size: 25px;
+  font-size: 1.8rem;
   font-weight: 600;
-  margin-bottom: 10px;
+  margin-bottom: 0.4em;
+  text-align: left;
 }
 
 .about .about-content .right .text span {
@@ -212,10 +226,10 @@ footer {
   display: inline-block;
   background: #82b440;
   color: #fff;
-  font-size: 20px;
+  font-size: 1.3rem;
   font-weight: 500;
-  padding: 10px 30px;
-  margin-top: 20px;
+  padding: 0.5em 1.5em;
+  margin-top: 1em;
   border-radius: 6px;
   border: 2px solid #82b440;
   transition: all 0.3s ease;
@@ -226,6 +240,9 @@ footer {
   background: none;
 }
 
+
+/* SKILLS */
+
 .skills {
   background-color: #f8f9fa;
 }
@@ -234,8 +251,8 @@ footer {
   text-align: center;
   font-size: 40px;
   font-weight: 500;
-  margin-bottom: 60px;
-  padding-bottom: 20px;
+  margin-bottom: 2em;
+  padding-bottom: 0.5em;
   font-family: "Ubuntu", sans-serif;
 }
 
@@ -410,8 +427,8 @@ footer {
 .experience span {
   color: #82b440;
 }
-
 footer {
+  font-family: "Poppins", sans-serif;
   background: #111;
   padding: 15px 23px;
   color: #fff;
