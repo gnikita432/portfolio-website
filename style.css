@@ -577,7 +577,7 @@ img{
     color: var(--first-color);
 }
 
-/*==================== PORTFOLIO ====================*/
+/* PORTFOLIO */
 .portfolio__container{
     overflow: initial;
 }
@@ -603,4 +603,36 @@ img{
 
 .portfolio__button:hover .button__icon{
     transform: translateX(0.25rem);
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after{
+    content: '' !important;
+}
+
+.swiper-portfolio-icon{
+    font-size: 2rem;
+    color:var(--first-color);
+}
+
+.swiper-button-prev{
+    left:-0.5rem !important;
+}
+
+.swiper-button-next{
+    right:-0.5rem !important;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets{
+    bottom:-0.4rem !important;
+} 
+
+.swiper-pagination-bullet-active{
+background-color: var(--first-color) !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next,
+.swiper-pagination-bullets{
+    outline:none;
 }
