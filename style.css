@@ -230,6 +230,11 @@ img{
     bottom: 0;
 }
 
+/* Active link */
+.active-link{
+    color:var(--first-color);
+}
+
 /* HOME */
 .home__container{
     gap: 1rem;
