@@ -832,6 +832,28 @@ padding:0.25rem 0.5rem 0.5rem 0;
         margin-bottom: 4rem;
     }
 
+    .header{
+        top:0;
+        bottom: initial;
+    }
+
+    .nav{
+        height:calc(var(--header-height) + 1.5rem);
+        column-gap:1rem;
+    }
+    .nav__icon,
+    .nav__toggle,
+    .nav__close{
+        display: none;
+    }
+    .nav__list{
+        display: flex;
+        column-gap:2rem;
+    }
+    .nav__menu{
+        margin-left: auto;
+    }
+
     .header,
     .main,
     .footer__container{
