@@ -990,12 +990,12 @@ img {
   .home__blob {
     width: 220px;
   }
-.home__title{
-  font-size: 1.5rem;
-}
-.home__scroll{
-  display: none;
-}
+  .home__title {
+    font-size: 1.5rem;
+  }
+  .home__scroll {
+    display: none;
+  }
   /* .home__social {
     transform: translateX(-6rem);
   } */
