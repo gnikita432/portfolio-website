@@ -825,7 +825,7 @@ img {
   }
 
   .section {
-    padding: 6rem 0 2rem;
+    padding: 6rem 0 0rem;
     padding-top: 10rem;
   }
   .section__subtitle {
@@ -861,7 +861,7 @@ img {
   }
 
   .home__container {
-    row-gap: 5rem;
+    row-gap: 2rem;
   }
   .home__content {
     padding-top: 5.5rem;
