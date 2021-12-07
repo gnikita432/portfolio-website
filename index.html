@@ -16,6 +16,8 @@
     <!-- SWIPER CSS -->
     <link rel="stylesheet" href="./swiper-bundle.min.css" />
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <title>Nikita Gupta</title>
   </head>
 
@@ -404,12 +406,20 @@
         <!-- PORTFOLIO -->
         <section class="portfolio section" id="portfolio">
           <h2 class="section__title">Portfolio</h2>
-          <span class="section__subtitle">Most recent work</span>
+          <span class="section__subtitle">Let's see my work</span>
+        
+          <!-- Project Filter -->
+          <ul class = "project-filter">
+            <li class="project-list project-filter-active" data-filter="all">All</li>
+            <li class="project-list" data-filter="react">React</li>
+            <li class="project-list" data-filter="mern">MERN</li>
+            <li class="project-list" data-filter="javascript">Javascript</li>
+            <li class="project-list" data-filter="css">HTML & CSS</li>
+          </ul>
 
-          <div class="portfolio__container container swiper-container">
-            <div class="swiper-wrapper">
-              <!--  PORTFOLIO 1 -->
-              <div class="portfolio__content grid swiper-slide">
+          <div class = "project-container">
+             <!--  PORTFOLIO 1 -->
+              <div class="portfolio-content all react grid ">
                 <img
                   src="images/amazon-clone.PNG"
                   alt=""
@@ -439,7 +449,7 @@
               </div>
 
               <!--  PORTFOLIO 2  -->
-              <div class="portfolio__content grid swiper-slide">
+              <div class="portfolio-content css all grid ">
                 <img
                   src="images/blog-website.PNG"
                   alt=""
@@ -471,7 +481,7 @@
               </div>
 
               <!--  PORTFOLIO 3  -->
-              <div class="portfolio__content grid swiper-slide">
+              <div class="portfolio-content all javascript grid ">
                 <img
                   src="images/color-fliper.PNG"
                   alt=""
@@ -503,7 +513,7 @@
               </div>
 
               <!--  PORTFOLIO 4  -->
-              <div class="portfolio__content grid swiper-slide">
+              <div class="portfolio-content all javascript grid ">
                 <img
                   src="images/countdown-timer.PNG"
                   alt=""
@@ -533,7 +543,7 @@
               </div>
 
               <!--  PORTFOLIO 5  -->
-              <div class="portfolio__content grid swiper-slide">
+              <div class="portfolio-content all react grid ">
                 <img
                   src="images/covidTrackerApp.PNG"
                   alt=""
@@ -563,7 +573,7 @@
               </div>
 
               <!--  PORTFOLIO 5  -->
-              <div class="portfolio__content grid swiper-slide">
+              <div class="portfolio-content all javascript grid ">
                 <img
                   src="images/counterApp.PNG"
                   alt=""
@@ -595,7 +605,7 @@
               </div>
 
               <!-- PORTFOLIO 6 -->
-              <div class="portfolio__content grid swiper-slide">
+              <div class="portfolio-content css all grid ">
                 <img
                   src="images/food-delivery.PNG"
                   alt=""
@@ -623,19 +633,8 @@
                   </a>
                 </div>
               </div>
-            </div>
-
-            <!-- Add Arrows -->
-            <div class="swiper-button-next">
-              <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
-            </div>
-            <div class="swiper-button-prev">
-              <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
-            </div>
-            <!-- Add Pagination -->
-            <div class="swiper-pagination"></div>
           </div>
-        </section>
+          </section>
 
         <!-- Project in Mind -->
         <section class="project section">

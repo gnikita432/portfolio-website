@@ -109,3 +109,29 @@ function scrollActive() {
   });
 }
 window.addEventListener("scroll", scrollActive);
+
+// Project
+
+$(".project-filter li").on("click", function () {
+  $(this)
+    .addClass("project-filter-active")
+    .siblings()
+    .removeClass("project-filter-active");
+  console.log("clidkced on ptojcet");
+});
+
+$(document).ready(function () {
+  $(".project-list").click(function () {
+    const value = $(this).attr("data-filter");
+    if (value == "all") {
+      $(".portfolio-content").show("1000");
+    } else {
+      $(".portfolio-content")
+        .not("." + value)
+        .hide("1000");
+      $(".portfolio-content")
+        .filter("." + value)
+        .show("1000");
+    }
+  });
+});
