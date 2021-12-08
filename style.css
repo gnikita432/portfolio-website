@@ -863,8 +863,11 @@ img {
   }
 
   .section {
-    padding: 6rem 0 0rem;
-    padding-top: 10rem;
+    padding: 7rem 0 0rem;
+  }
+
+  #home {
+    padding-top: 8rem;
   }
 
   .header {
