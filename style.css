@@ -633,7 +633,6 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid rgba(237, 237, 237, 0.6);
   flex-wrap: wrap;
   margin: 20px;
 }
@@ -658,7 +657,7 @@ img {
 .portfolio-content {
   width: 330px;
   padding: 15px;
-  border: 1px solid #eee;
+  border: 2px solid var(--input-color);
   margin: 20px;
 }
 .project-filter-active {
