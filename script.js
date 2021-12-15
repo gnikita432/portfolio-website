@@ -50,7 +50,7 @@ skillsHeader.forEach((el) => {
   el.addEventListener("click", toggleSkills);
 });
 
-/*------------------experience TABS--------------------- */
+/*==================== QUALIFICATION TABS ====================*/
 const tabs = document.querySelectorAll("[data-target]"),
   tabContents = document.querySelectorAll("[data-content]");
 
@@ -59,16 +59,37 @@ tabs.forEach((tab) => {
     const target = document.querySelector(tab.dataset.target);
 
     tabContents.forEach((tabContent) => {
-      tabContent.classList.remove("experience__active");
+      tabContent.classList.remove("qualification__active");
     });
-    target.classList.add("experience__active");
+
+    target.classList.add("qualification__active");
 
     tabs.forEach((tab) => {
-      tab.classList.remove("experience__active");
+      tab.classList.remove("qualification__active");
     });
-    tab.classList.add("experience__active");
+    tab.classList.add("qualification__active");
   });
 });
+
+// /*------------------experience TABS--------------------- */
+// const tabs = document.querySelectorAll("[data-target]"),
+//   tabContents = document.querySelectorAll("[data-content]");
+
+// tabs.forEach((tab) => {
+//   tab.addEventListener("click", () => {
+//     const target = document.querySelector(tab.dataset.target);
+
+//     tabContents.forEach((tabContent) => {
+//       tabContent.classList.remove("experience__active");
+//     });
+//     target.classList.add("experience__active");
+
+//     tabs.forEach((tab) => {
+//       tab.classList.remove("experience__active");
+//     });
+//     tab.classList.add("experience__active");
+//   });
+// });
 
 /* PORTFOLIO SWIPER */
 let swiper = new Swiper(".portfolio__container", {
