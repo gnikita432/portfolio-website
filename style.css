@@ -8,7 +8,8 @@
 
   /* Colors */
   /* Change favorite color */
-  --hue-color: 250; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+  --hue-color: 250;
+  /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
   /* HSL color mode */
   --first-color: hsl(var(--hue-color), 69%, 61%);
@@ -637,6 +638,7 @@ img {
   flex-wrap: wrap;
   margin: 20px;
 }
+
 .project-filter li {
   margin: 10px;
   padding: 5px 20px;
@@ -655,12 +657,14 @@ img {
   max-width: 1200px;
   margin: auto;
 }
+
 .portfolio-content {
   width: 330px;
   padding: 15px;
   border: 2px solid var(--input-color);
   margin: 20px;
 }
+
 .project-filter-active {
   color: var(--first-color);
 }
@@ -711,7 +715,7 @@ img {
   /* right:-0.5rem !important; */
 }
 
-.swiper-container-horizontal > .swiper-pagination-bullets {
+.swiper-container-horizontal>.swiper-pagination-bullets {
   bottom: -0.4rem !important;
 }
 
@@ -876,6 +880,7 @@ img {
   font-size: 1.5rem;
   color: #fff;
 }
+
 /* Show scroll */
 .show-scroll {
   bottom: 5rem;
@@ -888,14 +893,17 @@ img {
   .home__content {
     grid-template-columns: max-content 1fr 1fr;
   }
+
   .home__data {
     grid-column: initial;
   }
+
   .home__img {
     filter: saturate(0.65);
     order: 1;
     justify-self: center;
   }
+
   .about__container,
   .skills__container,
   .portfolio__content,
@@ -903,15 +911,18 @@ img {
   .footer__container {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .skills__container {
     display: flex;
     flex-direction: column;
   }
+
   .experience {
     display: grid;
     grid-template-columns: 0.6fr;
     justify-content: center;
   }
+
   .qualification__sections {
     display: grid;
     grid-template-columns: 0.8fr;
@@ -946,15 +957,18 @@ img {
     height: calc(var(--header-height) + 1.5rem);
     column-gap: 1rem;
   }
+
   .nav__icon,
   .nav__toggle,
   .nav__close {
     display: none;
   }
+
   .nav__list {
     display: flex;
     column-gap: 2rem;
   }
+
   .nav__menu {
     margin-left: auto;
   }
@@ -968,16 +982,20 @@ img {
   .home__container {
     row-gap: 2rem;
   }
+
   .home__content {
     padding-top: 5.5rem;
     column-gap: 2rem;
   }
+
   .home__blob {
     width: 270px;
   }
+
   .home__scroll {
     display: block;
   }
+
   .home__scroll-button {
     margin-left: 3rem;
   }
@@ -985,15 +1003,19 @@ img {
   .about__container {
     column-gap: 5rem;
   }
+
   .about__img {
     width: 350px;
   }
+
   .about__description {
     text-align: initial;
   }
+
   .about__info {
     justify-content: space-between;
   }
+
   .about__buttons {
     justify-content: initial;
   }
@@ -1001,9 +1023,11 @@ img {
   .experience__tabs {
     justify-content: center;
   }
+
   .experience__button {
     margin: 0 var(--mb-1);
   }
+
   .experience__sections {
     grid-template-columns: 0.5fr;
   }
@@ -1011,6 +1035,7 @@ img {
   .portfolio__img {
     width: 320px;
   }
+
   .portfolio__content {
     align-items: center;
   }
@@ -1018,9 +1043,11 @@ img {
   .project {
     text-align: initial;
   }
+
   .project__bg {
     background: none;
   }
+
   .project__container {
     background-color: var(--first-color-second);
     border-radius: 1rem;
@@ -1028,6 +1055,7 @@ img {
     grid-template-columns: 1fr max-content;
     column-gap: 3rem;
   }
+
   .project__data {
     padding-top: 0.8rem;
   }
@@ -1035,16 +1063,20 @@ img {
   .footer__container {
     grid-template-columns: repeat(3, 1fr);
   }
+
   .footer__bg {
     padding: 3rem 0 3.5rem;
   }
+
   .footer__links {
     flex-direction: row;
     column-gap: 2rem;
   }
+
   .footer__social {
     justify-self: flex-end;
   }
+
   .footer__copy {
     margin-top: 4.5rem;
   }
@@ -1065,6 +1097,7 @@ img {
   .footer__container {
     padding: 0;
   }
+
   .home__blob {
     width: 220px;
   }
@@ -1076,12 +1109,15 @@ img {
   .portfolio__container {
     grid-template-columns: repeat(3, 238px);
   }
+
   .portfolio__content {
     column-gap: 5rem;
   }
+
   .swiper-portfolio-icon {
     font-size: 3.5rem;
   }
+
   /* .swiper-button-prev{
         left:-3.5rem ;
     }
@@ -1095,6 +1131,7 @@ img {
   .contact__form {
     width: 460px;
   }
+
   .contact__inputs {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1177,7 +1214,7 @@ img {
   border-radius: 0.2rem;
 }
 
-.right-align{
+.right-align {
   text-align: right;
 }
 
@@ -1185,4 +1222,14 @@ img {
   color: var(--first-color);
   cursor: pointer;
   font-size: 14px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fa-brands {
+  font-size: 36px;
 }
