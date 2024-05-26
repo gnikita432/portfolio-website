@@ -160,7 +160,7 @@ img {
 
 /*==================== LAYOUT ====================*/
 .container {
-  max-width: 800px;
+  max-width: 1200px;
   /* max-width: 768px; */
   margin-left: var(--mb-1-5);
   margin-right: var(--mb-1-5);
@@ -824,6 +824,7 @@ img {
 .footer__links {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   row-gap: 1.5rem;
 }
 
@@ -1174,4 +1175,14 @@ img {
 .qualification__tech {
   border-bottom: 3px solid var(--first-color-alt);
   border-radius: 0.2rem;
+}
+
+.right-align{
+  text-align: right;
+}
+
+#toggleButton {
+  color: var(--first-color);
+  cursor: pointer;
+  font-size: 14px;
 }

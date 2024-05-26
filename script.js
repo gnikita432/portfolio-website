@@ -210,3 +210,16 @@ themeButton.addEventListener("click", () => {
   localStorage.setItem("selected-theme", getCurrentTheme());
   localStorage.setItem("selected-icon", getCurrentIcon());
 });
+
+function toggleContent() {
+  var extraContent = document.getElementById("extraContent");
+  var toggleButton = document.getElementById("toggleButton");
+
+  if (extraContent.style.display === "none") {
+    extraContent.style.display = "inline";
+    toggleButton.innerHTML = "Read Less";
+  } else {
+    extraContent.style.display = "none";
+    toggleButton.innerHTML = "...Read More";
+  }
+}

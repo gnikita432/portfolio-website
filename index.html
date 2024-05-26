@@ -119,7 +119,9 @@
             <p class="home__description">
               I am a Problem Solver and a Web Developer
             </p>
-            <a href="https://drive.google.com/file/d/15C9VxqhsrSvBO9lWGXGtxKrSTaxyRZTV/view?usp=sharing"
+
+            <!-- Resume is Private - Can request access to view -->
+            <a href="https://drive.google.com/file/d/1X3XUhApykN3uOV-1vi_uD9rc5w2HLmRJ/view?usp=sharing"
               class="button button--flex" target="_blank">
               My Resume <i class="uil uil-download-alt button__icon"> </i>
             </a>
@@ -136,7 +138,6 @@
       </div>
     </section>
 
-    <!-- ABOUT -->
     <section class="about section" id="about">
       <h2 class="section__title">About Me</h2>
       <span class="section__subtitle">My Introduction</span>
@@ -146,39 +147,68 @@
 
         <div class="about__data">
           <p class="about__description">
-            My name is Nikita and I am a Final year undergrad from RCOEM, Maharashtra, India.
-            <br>
-            <br>
-            I am a self-taught developer, and highly passionate about building real-world applications. You will find me
-            the most motivated and diligent one in a room.
-            <br>
-            I always believe in self learning and practical application of skills. I love creating attractive and
-            interactive websites using React, MERN, Javascript and HTML/CSS. Do check out my recent work!
-            <br>
-            My goal is to create or work on products and
-            services create impact on the world and give back to the community.
-            <!-- Welcome to my website. I am Nikita Anil Gupta and I am a junior
-                form Maharashtra, India. I am a programmer and I have a huge
-                interest in web development. I am a problem solver and I love
-                javascript. My goal is to create or work on products and
-                services create impact on the world and help the community.
-                Learning is my NO.1 passion. -->
+
+            <!-- 1st para -->
+            <span id="firstPara">
+              Welcome to my world of endless possibilities! I'm <strong>Nikita Gupta</strong>, a self-taught developer
+              fueled by an insatiable passion for turning ideas into tangible realities. You'll often find me as the
+              most
+              eager and enthusiastic presence in any room, driven by a relentless curiosity and a thirst for knowledge.
+              <br><br>
+            </span>
+
+            <!-- 2nd para -->
+            <span id="secondPara">
+              My journey as a developer has been nothing short of exhilarating. From mastering the intricacies of
+              <strong>React</strong>, <strong>Angular</strong>, and the <strong>MERN</strong> stack to crafting
+              captivating and immersive web experiences with <strong>JavaScript</strong>, <strong>TypeScript</strong>,
+              <strong>HTML</strong>, and <strong>CSS</strong>, I thrive on the thrill of bringing imagination to life
+              through code.
+              <br><br>
+            </span>
+
+            <!-- Remaining paras -->
+            <span id="extraContent" style="display:none;">
+              <!-- 3rd para -->
+              But what truly sets my soul on fire is the opportunity to make a meaningful impact. I believe in the power
+              of technology to transform lives and communities, and my goal is to be at the forefront of this
+              revolution.
+              <br><br>
+
+              <!-- 4th para -->
+              Whether it's building innovative products or contributing to projects that leave a lasting legacy, I am
+              committed to using my diverse skill set to create positive change in the world.
+              <br><br>
+              So, <em>dive into my portfolio</em> and witness the magic of my recent creations! Let's embark on a
+              journey
+              of innovation, collaboration, and boundless potential together. <strong>Together, we can turn dreams into
+                realities</strong> and redefine what's possible in the digital landscape.
+              <br><br>
+              Join me on this <em>extraordinary adventure</em>!
+              <br><br>
+              Warm regards,<br>
+              Nikita Gupta
+            </span>
+
+            <!-- Read More / Read Less Buttons -->
+            <a id="toggleButton" href="javascript:void(0);" onclick="toggleContent()">...Read More</a>
           </p>
 
-          <!-- <div class="about__info">
-                        <div>
-                            <span class="about__info-title">02+</span>
-                            <span class="about__info-name">Years <br> experience</span>
-                        </div>
-                        <div>
-                            <span class="about__info-title">5+</span>
-                            <span class="about__info-name">Completed <br> project</span>
-                        </div>
-                        <div>
-                            <span class="about__info-title">02+</span>
-                            <span class="about__info-name">Companies <br> worked</span>
-                        </div>
-                    </div> -->
+
+          <div class="about__info">
+            <div>
+              <span class="about__info-title">2.5+</span>
+              <span class="about__info-name">Years <br> experience</span>
+            </div>
+            <div>
+              <span class="about__info-title">12+</span>
+              <span class="about__info-name">Completed <br> project</span>
+            </div>
+            <div>
+              <span class="about__info-title">02+</span>
+              <span class="about__info-name">Companies <br> worked</span>
+            </div>
+          </div>
 
           <div class="about__buttons">
             <a href="https://www.linkedin.com/in/nikita-gupta4/" class="button button--flex" target="_blank">
@@ -192,6 +222,9 @@
     <section class="skills section" id="skills">
       <h2 class="section__title">Skills</h2>
       <span class="section__subtitle">My technical level</span>
+
+      <!-- web developer  -->
+      <!-- fornt end developer basic -->
 
       <div class="skills__container container grid">
 
@@ -330,9 +363,9 @@
           <!--===============================QUALIFICATION CONTENT 1 ===========================-->
           <div class="qualification__content qualification__active" data-content id="work">
 
-             <!--===============================QUALIFICATION 7 ===========================-->
-             <div class="qualification__data">
-              <div>
+            <!--===============================QUALIFICATION 7 ===========================-->
+            <div class="qualification__data">
+              <div class="right-align">
                 <h3 class="qualification__title">Associate FrontEnd Developer</h3>
                 <span class="qualification__subtitle">
                   <a href="https://www.rmgx.in/" target="_blank">RMgX Technologies</a>
@@ -373,7 +406,7 @@
 
             <!--===============================QUALIFICATION 5 ===========================-->
             <div class="qualification__data">
-              <div>
+              <div class="right-align">
                 <h3 class="qualification__title">Software Engineer Intern</h3>
                 <span class="qualification__subtitle">
                   <a href="https://fellowship.mlh.io/" target="_blank">Solana Labs (MLH Fellowship)</a>
@@ -414,7 +447,7 @@
 
             <!--===============================QUALIFICATION 3 ===========================-->
             <div class="qualification__data">
-              <div>
+              <div class="right-align">
                 <h3 class="qualification__title">Open Source Contributor</h3>
                 <span class="qualification__subtitle">
                   <a href="" target="_blank">GirlScript Winter of Contributing</a>
@@ -456,7 +489,7 @@
 
             <!--===============================QUALIFICATION 1 ===========================-->
             <div class="qualification__data">
-              <div>
+              <div class="right-align">
                 <h3 class="qualification__title">Open Source Developer</h3>
                 <span class="qualification__subtitle">
                   <a href="https://gssoc.girlscript.tech/" target="_blank">Girlscript Summer Of Code</a>
@@ -479,7 +512,7 @@
           <div class="qualification__content " data-content id="Achivements">
             <!--===============================QUALIFICATION 1 ===========================-->
             <div class="qualification__data">
-              <div>
+              <div class="right-align">
                 <h3 class="qualification__title"> Secured Rank 35 among 8000+ participants in GSSOC’21 with 83
                   PRs merged</h3>
                 <span class="qualification__subtitle">
@@ -526,7 +559,7 @@
 
             <!--===============================QUALIFICATION 3 ===========================-->
             <div class="qualification__data">
-              <div>
+              <div class="right-align">
                 <h3 class="qualification__title">Got <b>5 star badge </b>in JAVA and 4 star badge in problem solving on
                   hackerrank.</h3>
 
@@ -578,7 +611,7 @@
           <div class="qualification__content " data-content id="education">
             <!--===============================QUALIFICATION 1 ===========================-->
             <div class="qualification__data">
-              <div>
+              <div class="right-align">
                 <h3 class="qualification__title">BE minors Computer Science</h3>
                 <span class="qualification__subtitle">Shri Ramdeobaba College of engineering</span>
                 <div class="qualification__calendar">
@@ -615,7 +648,7 @@
 
             <!--===============================QUALIFICATION 3 ===========================-->
             <div class="qualification__data">
-              <div>
+              <div class="right-align">
                 <h3 class="qualification__title">Reactjs Course</h3>
                 <span class="qualification__subtitle">Scrimba, Online</span>
                 <div class="qualification__calendar">
@@ -650,7 +683,7 @@
             </div>
             <!--===============================QUALIFICATION 5 ===========================-->
             <div class="qualification__data">
-              <div>
+              <div class="right-align">
                 <h3 class="qualification__title">Object Oriented Programing In Java</h3>
                 <span class="qualification__subtitle">Coursera, Online</span>
                 <div class="qualification__calendar">
@@ -987,6 +1020,9 @@
           </a>
           <a href="https://twitter.com/gnikita432" target="_blank" class="footer__social">
             <i class="uil uil-twitter-alt"></i>
+          </a>
+          <a href="https://leetcode.com/gnikita432/" target="_blank" class="footer__social">
+            <span class="iconify" data-icon="simple-icons:leetcode"></span>
           </a>
           <!-- <a  href="https://leetcode.com/gnikita432/"
                   target="_blank"
